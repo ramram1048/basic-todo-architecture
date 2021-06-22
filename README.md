@@ -1,1 +1,3 @@
-# Basic Todo App based on clean architecture
+Just a small try to implement "Clean Architecture" on Basic Todo web application.
+
+WIP
