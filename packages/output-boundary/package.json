@@ -1,0 +1,7 @@
+{
+  "name": "@todo/output-boundary",
+  "version": "0.0.0",
+  "dependencies": {
+    "@todo/output-data": "workspace:^0.0.0"
+  }
+}

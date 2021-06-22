@@ -21,11 +21,46 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "todo",
         "reference": "workspace:."
+      },
+      {
+        "name": "@todo/data-access-interface",
+        "reference": "workspace:packages/data-access-interface"
+      },
+      {
+        "name": "@todo/entities",
+        "reference": "workspace:packages/entities"
+      },
+      {
+        "name": "@todo/input-boundary",
+        "reference": "workspace:packages/input-boundary"
+      },
+      {
+        "name": "@todo/input-data",
+        "reference": "workspace:packages/input-data"
+      },
+      {
+        "name": "@todo/output-boundary",
+        "reference": "workspace:packages/output-boundary"
+      },
+      {
+        "name": "@todo/output-data",
+        "reference": "workspace:packages/output-data"
+      },
+      {
+        "name": "@todo/use-case-interactor",
+        "reference": "workspace:packages/use-case-interactor"
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
+      ["@todo/data-access-interface", ["workspace:packages/data-access-interface"]],
+      ["@todo/entities", ["workspace:packages/entities"]],
+      ["@todo/input-boundary", ["workspace:packages/input-boundary"]],
+      ["@todo/input-data", ["workspace:packages/input-data"]],
+      ["@todo/output-boundary", ["workspace:packages/output-boundary"]],
+      ["@todo/output-data", ["workspace:packages/output-data"]],
+      ["@todo/use-case-interactor", ["workspace:packages/use-case-interactor"]],
       ["todo", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -38,6 +73,78 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["typescript", "patch:typescript@npm%3A4.3.4#builtin<compat/typescript>::version=4.3.4&hash=ddfc1b"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/data-access-interface", [
+        ["workspace:packages/data-access-interface", {
+          "packageLocation": "./packages/data-access-interface/",
+          "packageDependencies": [
+            ["@todo/data-access-interface", "workspace:packages/data-access-interface"],
+            ["@todo/entities", "workspace:packages/entities"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/entities", [
+        ["workspace:packages/entities", {
+          "packageLocation": "./packages/entities/",
+          "packageDependencies": [
+            ["@todo/entities", "workspace:packages/entities"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/input-boundary", [
+        ["workspace:packages/input-boundary", {
+          "packageLocation": "./packages/input-boundary/",
+          "packageDependencies": [
+            ["@todo/input-boundary", "workspace:packages/input-boundary"],
+            ["@todo/input-data", "workspace:packages/input-data"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/input-data", [
+        ["workspace:packages/input-data", {
+          "packageLocation": "./packages/input-data/",
+          "packageDependencies": [
+            ["@todo/input-data", "workspace:packages/input-data"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/output-boundary", [
+        ["workspace:packages/output-boundary", {
+          "packageLocation": "./packages/output-boundary/",
+          "packageDependencies": [
+            ["@todo/output-boundary", "workspace:packages/output-boundary"],
+            ["@todo/output-data", "workspace:packages/output-data"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/output-data", [
+        ["workspace:packages/output-data", {
+          "packageLocation": "./packages/output-data/",
+          "packageDependencies": [
+            ["@todo/output-data", "workspace:packages/output-data"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
+      ["@todo/use-case-interactor", [
+        ["workspace:packages/use-case-interactor", {
+          "packageLocation": "./packages/use-case-interactor/",
+          "packageDependencies": [
+            ["@todo/use-case-interactor", "workspace:packages/use-case-interactor"],
+            ["@todo/data-access-interface", "workspace:packages/data-access-interface"],
+            ["@todo/entities", "workspace:packages/entities"],
+            ["@todo/input-boundary", "workspace:packages/input-boundary"],
+            ["@todo/input-data", "workspace:packages/input-data"],
+            ["@todo/output-boundary", "workspace:packages/output-boundary"],
+            ["@todo/output-data", "workspace:packages/output-data"]
           ],
           "linkType": "SOFT",
         }]

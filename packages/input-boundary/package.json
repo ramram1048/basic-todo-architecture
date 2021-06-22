@@ -1,0 +1,7 @@
+{
+  "name": "@todo/input-boundary",
+  "version": "0.0.0",
+  "dependencies": {
+    "@todo/input-data": "workspace:^0.0.0"
+  }
+}

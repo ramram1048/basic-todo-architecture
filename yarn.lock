@@ -5,6 +5,61 @@ __metadata:
   version: 4
   cacheKey: 7
 
+"@todo/data-access-interface@workspace:^0.0.0, @todo/data-access-interface@workspace:packages/data-access-interface":
+  version: 0.0.0-use.local
+  resolution: "@todo/data-access-interface@workspace:packages/data-access-interface"
+  dependencies:
+    "@todo/entities": "workspace:^0.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@todo/entities@workspace:^0.0.0, @todo/entities@workspace:packages/entities":
+  version: 0.0.0-use.local
+  resolution: "@todo/entities@workspace:packages/entities"
+  languageName: unknown
+  linkType: soft
+
+"@todo/input-boundary@workspace:^0.0.0, @todo/input-boundary@workspace:packages/input-boundary":
+  version: 0.0.0-use.local
+  resolution: "@todo/input-boundary@workspace:packages/input-boundary"
+  dependencies:
+    "@todo/input-data": "workspace:^0.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@todo/input-data@workspace:^0.0.0, @todo/input-data@workspace:packages/input-data":
+  version: 0.0.0-use.local
+  resolution: "@todo/input-data@workspace:packages/input-data"
+  languageName: unknown
+  linkType: soft
+
+"@todo/output-boundary@workspace:^0.0.0, @todo/output-boundary@workspace:packages/output-boundary":
+  version: 0.0.0-use.local
+  resolution: "@todo/output-boundary@workspace:packages/output-boundary"
+  dependencies:
+    "@todo/output-data": "workspace:^0.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@todo/output-data@workspace:^0.0.0, @todo/output-data@workspace:packages/output-data":
+  version: 0.0.0-use.local
+  resolution: "@todo/output-data@workspace:packages/output-data"
+  languageName: unknown
+  linkType: soft
+
+"@todo/use-case-interactor@workspace:packages/use-case-interactor":
+  version: 0.0.0-use.local
+  resolution: "@todo/use-case-interactor@workspace:packages/use-case-interactor"
+  dependencies:
+    "@todo/data-access-interface": "workspace:^0.0.0"
+    "@todo/entities": "workspace:^0.0.0"
+    "@todo/input-boundary": "workspace:^0.0.0"
+    "@todo/input-data": "workspace:^0.0.0"
+    "@todo/output-boundary": "workspace:^0.0.0"
+    "@todo/output-data": "workspace:^0.0.0"
+  languageName: unknown
+  linkType: soft
+
 "todo@workspace:.":
   version: 0.0.0-use.local
   resolution: "todo@workspace:."

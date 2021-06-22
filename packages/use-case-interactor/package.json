@@ -1,0 +1,14 @@
+{
+  "name": "@todo/use-case-interactor",
+  "version": "0.0.0",
+  "dependencies": {
+    "@todo/data-access-interface": "workspace:^0.0.0",
+    "@todo/entities": "workspace:^0.0.0",
+    "@todo/input-data": "workspace:^0.0.0",
+    "@todo/output-data": "workspace:^0.0.0"
+  },
+  "devDependencies": {
+    "@todo/input-boundary": "workspace:^0.0.0",
+    "@todo/output-boundary": "workspace:^0.0.0"
+  }
+}

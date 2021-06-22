@@ -1,0 +1,7 @@
+{
+  "name": "@todo/data-access-interface",
+  "version": "0.0.0",
+  "dependencies": {
+    "@todo/entities": "workspace:^0.0.0"
+  }
+}
