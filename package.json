@@ -1,0 +1,9 @@
+{
+  "name": "todo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.3.4"
+  }
+}
