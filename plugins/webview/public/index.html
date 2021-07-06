@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Basic Todo App</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <h1>Basic Todo App</h1>
+  <ul id="todo-list"></ul>
+  <form id="todo-form">
+    <label for="todo-input">Add Todo:</label>
+    <input type="text" name="todo" id="todo-input" required>
+    <button type="submit">Add</button>
+  </form>
+  <template id="todo-item">
+    <li class="todo-item-wrap">
+      <input type="checkbox" class="todo-item-checkbox">
+      <label class="todo-item-label"></label>
+    </li>
+  </template>
+</body>
+</html>
