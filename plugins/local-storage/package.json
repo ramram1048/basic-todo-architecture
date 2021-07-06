@@ -1,0 +1,8 @@
+{
+  "name": "@todo/local-storage",
+  "version": "0.0.0",
+  "dependencies": {
+    "@todo/data-access-interface": "workspace:^0.0.0",
+    "@todo/entities": "workspace:^0.0.0"
+  }
+}
