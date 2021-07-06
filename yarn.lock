@@ -90,7 +90,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@todo/webview@workspace:plugins/webview"
   dependencies:
-    "@todo/entities": "workspace:^0.0.0"
     "@todo/input-boundary": "workspace:^0.0.0"
     "@todo/local-storage": "workspace:^0.0.0"
     "@todo/output-boundary": "workspace:^0.0.0"

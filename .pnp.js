@@ -195,7 +195,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./plugins/webview/",
           "packageDependencies": [
             ["@todo/webview", "workspace:plugins/webview"],
-            ["@todo/entities", "workspace:packages/entities"],
             ["@todo/input-boundary", "workspace:packages/input-boundary"],
             ["@todo/local-storage", "workspace:plugins/local-storage"],
             ["@todo/output-boundary", "workspace:packages/output-boundary"],

@@ -2,7 +2,6 @@
   "name": "@todo/webview",
   "version": "0.0.0",
   "dependencies": {
-    "@todo/entities": "workspace:^0.0.0",
     "@todo/input-boundary": "workspace:^0.0.0",
     "@todo/local-storage": "workspace:^0.0.0",
     "@todo/output-boundary": "workspace:^0.0.0",
