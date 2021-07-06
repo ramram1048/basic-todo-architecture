@@ -1,3 +1,3 @@
-Just a small try to implement "Clean Architecture" on Basic Todo web application.
+# Basic Todo App implements Clean Architecture
 
-WIP
+![Package Diagram](./diagram.png)
